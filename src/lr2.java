@@ -5,6 +5,7 @@
 Создать метод , позволяющий найти суммарную площадь любого
 набора Фигур.
 */
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class lr2 {
@@ -16,17 +17,20 @@ public class lr2 {
         Point p5 = new Point(0, 6);
         Point p6 = new Point(7, 6);
         Triangle t1 = new Triangle(p1, p2, p3);
-        System.out.println("Square of this triangle is - " + t1.square());
+        //System.out.println("Square of this triangle is - " + t1.square());
         Rectangle r1 = new Rectangle(p1, p5, p6, p4);
-        System.out.println("Square of this rectangle is - " + r1.square());
+        //System.out.println("Square of this rectangle is - " + r1.square());
         Trapezoid tr1 = new Trapezoid(p1, p2, p3, p4);
-        System.out.println("Square of this trapeze is - " + tr1.square());
+        //System.out.println("Square of this trapeze is - " + tr1.square());
         ArrayList<Figure> listOfFigures = new ArrayList<>();
         listOfFigures.add(t1);
         listOfFigures.add(tr1);
         listOfFigures.add(r1);
         lr2 l = new lr2();
-        System.out.println(l.sumSquare(listOfFigures));
+        //System.out.println(l.sumSquare(listOfFigures));
+        lr2 l1 = new lr2();
+        int [] arr = {14, 62, 13, 34, 57, 16,};
+        l1.BubleSort(arr);
     }
 
         double sumSquare(ArrayList<Figure> listOfFigures){
@@ -36,6 +40,34 @@ public class lr2 {
         }
         return sq;
     }
+
+
+
+
+
+   void BubleSort(int [] arr){
+       int length = arr.length;
+       int counter = 0;
+       while (counter < length - 1){
+        for (int i = 0; i < length -1; i++){
+                    if(arr[i] > arr[i + 1]){
+                        int a = arr[i];
+                        arr[i] = arr[i + 1];
+                        arr[i + 1] = a;
+                    }
+
+
+        }
+       counter ++;
+       }
+
+        for (int i = 0; i < arr.length; i++){
+            System.out.println(arr[i]);
+        }
+
+    }
+
+
 
 }
 

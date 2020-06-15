@@ -95,7 +95,7 @@ public class lr3 extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>
+    }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         Date d1 = new Date();
