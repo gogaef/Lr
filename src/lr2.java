@@ -7,7 +7,7 @@
 */
 import java.lang.reflect.Array;
 import java.util.ArrayList;
-//Yefremov George gr 202
+//Yefremov George group 202
 public class lr2 {
     public static void main(String[] args) {
         Point p1 = new Point(0, 0);
